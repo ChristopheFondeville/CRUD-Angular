@@ -7,6 +7,7 @@ import {RouterOutlet} from "@angular/router";
 import { Error404Component } from './views/error404/error404.component';
 import { HomeComponent } from './views/home/home.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { FooterComponent } from './components/footer/footer.component';
   ],
     imports: [
         BrowserModule,
-        RouterOutlet
+        RouterOutlet,
+        NgbModule
     ],
   providers: [],
   bootstrap: [AppComponent]

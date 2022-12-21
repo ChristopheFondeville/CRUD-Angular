@@ -1,1 +1,46 @@
 /* You can add global styles to this file, and also import other style files */
+/* Style */
+:root {
+  --primaryColor: #377D71;
+  --secondaryColor: #FBC5C5;
+  --thirdColor: #FBA1A1;
+  --fourthColor: #8879B0;
+  --fithColor: #FFFCF2;
+  --sixthColor: #000000;
+  --primaryColorRGB: 55,125,113;
+  --secondaryColorRGB: 251,197,197;
+  --thirdColorRGB: 251,161,161;
+  --fourthColorRGB: 136,121,176;
+}
+/* Background HEXA*/
+.bg-primaryColor{
+  background-color: var(--primaryColor);
+}
+.bg-secondaryColor{
+  background-color: var(--secondaryColor);
+}
+.bg-thirdColor{
+  background-color: var(--thirdColor);
+}
+.bg-fourthColor{
+  background-color: var(--fourthColor);
+}
+.bg-fithColor{
+  background-color: var(--fithColor);
+}
+.bg-sixthColor{
+  background-color: var(--sixthColor);
+}
+/* Background RGB */
+.bg-primaryColor-rgb{
+  --bs-bg-opacity: 1;
+  background-color: rgba(var(--primaryColorRGB), var(--bs-bg-opacity)) !important;
+}
+.bg-secondaryColor-rgb{
+  --bs-bg-opacity: 1;
+  background-color: rgba(var(--secondaryColorRGB), var(--bs-bg-opacity)) !important;
+}
+.bg-thirdColor-rgb{
+  --bs-bg-opacity: 1;
+  background-color: rgba(var(--thirdColorRGB), var(--bs-bg-opacity)) !important;
+}
