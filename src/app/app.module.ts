@@ -22,6 +22,7 @@ import {CardComponent} from './components/card/card.component';
 import {HttpClientModule} from "@angular/common/http";
 import {MatInputModule} from "@angular/material/input";
 import {MatSelectModule} from "@angular/material/select";
+import { EditComponent } from './views/edit/edit.component';
 
 @NgModule({
   declarations: [
@@ -32,6 +33,7 @@ import {MatSelectModule} from "@angular/material/select";
     FooterComponent,
     CreateComponent,
     CardComponent,
+    EditComponent,
   ],
   imports: [
     BrowserModule,
