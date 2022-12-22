@@ -13,4 +13,6 @@ export class CardComponent {
 
   @Input() image = '';
 
+  @Input() id = '';
+
 }
