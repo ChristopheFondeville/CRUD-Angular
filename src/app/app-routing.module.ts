@@ -5,6 +5,7 @@ import {HomeComponent} from "./views/home/home.component";
 import {CreateComponent} from "./views/create/create.component";
 import {Error404Component} from "./views/error404/error404.component";
 
+
 const routes: Routes = [
   {path: 'home', component: HomeComponent},
   {path: 'create', component: CreateComponent},

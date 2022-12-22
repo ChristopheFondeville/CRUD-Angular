@@ -18,6 +18,8 @@ import {CreateComponent} from './views/create/create.component';
 import {AppRoutingModule} from './app-routing.module';
 import {RouterOutlet} from "@angular/router";
 import {MatCardModule} from "@angular/material/card";
+import {CardComponent} from './components/card/card.component';
+import {HttpClientModule} from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -26,7 +28,8 @@ import {MatCardModule} from "@angular/material/card";
     Error404Component,
     HomeComponent,
     FooterComponent,
-    CreateComponent
+    CreateComponent,
+    CardComponent,
   ],
   imports: [
     BrowserModule,
@@ -40,6 +43,7 @@ import {MatCardModule} from "@angular/material/card";
     MatListModule,
     AppRoutingModule,
     RouterOutlet,
+    HttpClientModule,
     MatCardModule,
   ],
   providers: [],
