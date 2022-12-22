@@ -17,6 +17,7 @@ import {MatListModule} from "@angular/material/list";
 import {CreateComponent} from './views/create/create.component';
 import {AppRoutingModule} from './app-routing.module';
 import {RouterOutlet} from "@angular/router";
+import {MatCardModule} from "@angular/material/card";
 
 @NgModule({
   declarations: [
@@ -39,6 +40,7 @@ import {RouterOutlet} from "@angular/router";
     MatListModule,
     AppRoutingModule,
     RouterOutlet,
+    MatCardModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
