@@ -51,3 +51,7 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 .content{
   margin: 5%;
 }
+.formField{
+  margin: 1%;
+}
+

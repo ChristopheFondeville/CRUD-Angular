@@ -10,7 +10,7 @@ import {EditComponent} from "./views/edit/edit.component";
 const routes: Routes = [
   {path: 'home', component: HomeComponent},
   {path: 'create', component: CreateComponent},
-  {path: 'edit', component: EditComponent},
+  {path: 'edit/:id', component: EditComponent},
   {path: '', redirectTo: 'home', pathMatch: 'full'},
   {path: '**', component: Error404Component}
 ];
