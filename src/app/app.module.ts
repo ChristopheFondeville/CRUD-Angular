@@ -20,6 +20,8 @@ import {RouterOutlet} from "@angular/router";
 import {MatCardModule} from "@angular/material/card";
 import {CardComponent} from './components/card/card.component';
 import {HttpClientModule} from "@angular/common/http";
+import {MatInputModule} from "@angular/material/input";
+import {MatSelectModule} from "@angular/material/select";
 
 @NgModule({
   declarations: [
@@ -45,6 +47,8 @@ import {HttpClientModule} from "@angular/common/http";
     RouterOutlet,
     HttpClientModule,
     MatCardModule,
+    MatInputModule,
+    MatSelectModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
