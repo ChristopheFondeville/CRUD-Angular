@@ -1,0 +1,13 @@
+<mat-card class="content">
+  <mat-card-header>
+    <mat-card-title>Delete Articles bog</mat-card-title>
+  </mat-card-header>
+  <mat-selection-list #shoes>
+    <mat-list-item *ngFor="let blogPost of blogPosts | async">
+      <strong>{{blogPost.title}}</strong> - <em>{{(blogPost.content.length > 6) ? (blogPost.content | slice:0:100) + '...' : (blogPost.content)}}</em>
+      <button mat-icon-button color="warn" aria-label="Delete Article" (click)="onDeletePost(blogPost.id)">
+      <mat-icon>delete</mat-icon>
+    </button>
+    </mat-list-item>
+  </mat-selection-list>
+</mat-card>
