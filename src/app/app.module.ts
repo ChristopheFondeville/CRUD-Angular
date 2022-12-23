@@ -25,6 +25,7 @@ import {MatSelectModule} from "@angular/material/select";
 import { EditComponent } from './views/edit/edit.component';
 import {MatFormFieldModule} from "@angular/material/form-field";
 import {ReactiveFormsModule} from "@angular/forms";
+import { DeleteComponent } from './views/delete/delete.component';
 
 @NgModule({
   declarations: [
@@ -36,6 +37,7 @@ import {ReactiveFormsModule} from "@angular/forms";
     CreateComponent,
     CardComponent,
     EditComponent,
+    DeleteComponent,
   ],
   imports: [
     BrowserModule,

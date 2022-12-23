@@ -1,4 +1,8 @@
 import {Component, Input} from '@angular/core';
+import {Observable} from "rxjs";
+import {Blog} from "../../models/blog";
+
+
 
 @Component({
   selector: 'app-card',
@@ -6,6 +10,8 @@ import {Component, Input} from '@angular/core';
   styleUrls: ['./card.component.css']
 })
 export class CardComponent {
+
+  public blogPosts!: Observable<Blog[]>
 
   @Input() titre = '';
 
@@ -15,4 +21,6 @@ export class CardComponent {
 
   @Input() id = '';
 
+  constructor() {
+  }
 }

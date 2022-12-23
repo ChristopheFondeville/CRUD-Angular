@@ -29,7 +29,7 @@ export class BlogService {
     return this.http.put<Blog>(environment.urlAPI + "blog/" + id, blog);
   }
 
-  deleteBlogPost(id: string): Observable<void> {
-    return this.http.delete<void>(environment.urlAPI + 'blog/' + id);
+  deleteBlogPost(id: number): Observable<Blog> {
+    return this.http.delete<Blog>(environment.urlAPI + 'blog/' + id);
   }
 }

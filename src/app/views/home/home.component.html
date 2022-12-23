@@ -1,3 +1,6 @@
-<mat-card class="content cardTest"  >
-<app-card *ngFor="let blogPost of (blogPosts | async)" titre="{{blogPost.title}}" content="{{blogPost.content}}" id="{{blogPost.id}}" image="{{blogPost.image}}"></app-card>
+<mat-card class="content cardTest">
+  <app-card *ngFor="let blogPost of (blogPosts | async)" titre="{{blogPost.title}}" content="{{blogPost.content}}"
+            id="{{blogPost.id}}" image="{{blogPost.image}}">
+  </app-card>
+
 </mat-card>
