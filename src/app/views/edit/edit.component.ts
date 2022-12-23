@@ -42,7 +42,7 @@ export class EditComponent {
     if (this.form.valid) {
       this.blogService.updateBlogPost(this.id, <Blog> this.form.getRawValue()).subscribe(
         () => {
-          this.router.navigate(['edit', this.id]);
+          this.router.navigate(['edit']);
         },
         (error: Error) => {
           console.error(error);
