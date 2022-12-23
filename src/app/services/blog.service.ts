@@ -21,6 +21,10 @@ export class BlogService {
     return this.http.get<Blog>(environment.urlAPI + "blog/" + id)
   }
 
+  public postBlogPost(blog: Blog): Observable<Blog> {
+    return this.http.post<Blog>(environment.urlAPI + "blog", blog)
+  }
+
   public updateBlogPost(id: string, blog: Blog): Observable<Blog>{
     return this.http.put<Blog>(environment.urlAPI + "blog/" + id, blog);
   }
