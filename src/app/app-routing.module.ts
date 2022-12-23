@@ -5,12 +5,14 @@ import {HomeComponent} from "./views/home/home.component";
 import {CreateComponent} from "./views/create/create.component";
 import {Error404Component} from "./views/error404/error404.component";
 import {EditComponent} from "./views/edit/edit.component";
+import {DeleteComponent} from "./views/delete/delete.component";
 
 
 const routes: Routes = [
   {path: 'home', component: HomeComponent},
   {path: 'create', component: CreateComponent},
   {path: 'edit/:id', component: EditComponent},
+  {path: 'delete', component: DeleteComponent},
   {path: '', redirectTo: 'home', pathMatch: 'full'},
   {path: '**', component: Error404Component}
 ];
