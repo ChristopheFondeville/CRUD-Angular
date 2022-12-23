@@ -22,6 +22,9 @@ import {CardComponent} from './components/card/card.component';
 import {HttpClientModule} from "@angular/common/http";
 import {MatInputModule} from "@angular/material/input";
 import {MatSelectModule} from "@angular/material/select";
+import { EditComponent } from './views/edit/edit.component';
+import {MatFormFieldModule} from "@angular/material/form-field";
+import {ReactiveFormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -32,6 +35,7 @@ import {MatSelectModule} from "@angular/material/select";
     FooterComponent,
     CreateComponent,
     CardComponent,
+    EditComponent,
   ],
   imports: [
     BrowserModule,
@@ -49,6 +53,8 @@ import {MatSelectModule} from "@angular/material/select";
     MatCardModule,
     MatInputModule,
     MatSelectModule,
+    MatFormFieldModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
