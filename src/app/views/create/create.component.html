@@ -7,11 +7,17 @@
       <mat-label>Title</mat-label>
       <input formControlName="title" #inputElement required matInput>
       <mat-hint align="end">{{inputElement.value.length}}/255 caractères</mat-hint>
+      <div *ngIf="(form.controls && (form.controls?.['title']?.dirty || form.controls?.['title']?.touched))">
+        <p *ngIf="form.controls?.['title']?.errors" [ngStyle]="{'color' : 'red'}">Le champ est obligatoire</p>
+      </div>
     </mat-form-field>
     <mat-form-field appearance="fill" class="formField">
       <mat-label>Your text</mat-label>
       <textarea formControlName="content" #textAreaElement required matInput></textarea>
       <mat-hint align="end">{{textAreaElement.value.length}} caractères</mat-hint>
+      <div *ngIf="(form.controls && (form.controls?.['content']?.dirty || form.controls?.['content']?.touched))">
+        <p *ngIf="form.controls?.['content']?.errors" [ngStyle]="{'color' : 'red'}">Le champ est obligatoire</p>
+      </div>
     </mat-form-field>
   <mat-form-field appearance="fill" class="formField">
     <mat-label>Image</mat-label>
